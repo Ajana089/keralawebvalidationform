@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KERALA TOURISM WEBSITE</title>
+     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b6b3415ced.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+   <link rel="stylesheet" href="bootstrap.min.css">
+<style>
+  .form-container {  
+    display: block;  
+    width: 100px;  
+    margin: 60px auto;  
+    text-align: left;  
+  }  
+ 
+  input[type='password'] {  
+    width: 10%;  
+    box-sizing: border-box;  
+    height: 20px;  
+    display: inline-block;  
+      
+    /* border-radius: 5px;   */
+    padding: 0 15px;  
+    margin: 10px 0;  
+    transition: .2s;  
+  }  
+  input[type='password']:focus {  
+    outline: none;  
+     -moz-outline: none;  
+     -webkit-outline: none;  
+  }  
+  
+  .progress-bar_wrap {  
+    width: 150px;  
+    height: 20px;  
+    background: #F6F6FA;  
+    display: inline-block;  
+    vertical-align: middle;  
+    overflow: hidden;  
+    border-radius: 5px;  
+  }  
+  .form-1 .progress-bar_item {  
+    display: inline-block;  
+    height: 100%;  
+    width: 33.33%;  
+   float: left;  
+    visibility: hidden;  
+    transition: background-color .2s, visisility .1s;  
+  }  
+  .form-1 .active {  
+    visibility: visible;  
+  }  
+  .progress-bar_item-1 {  
+    }  
+  .progress-bar_item-2 {  
+  }  
+  .progress-bar_item-3 {  
+  }  
+  .progress-bar_text {  
+    display: inline-block;  
+    color: #aaa;  
+    margin-left: 5px;  
+    transition: .2s;  
+  }  
+  </style>  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>  
+  <script>$( document ).ready(function() {  
+    const changeText = function (el, text, color) {  
+      el.text(text).css('color', color);  
+    };  
+    $('.input-1').keyup(function(){  
+      let len = this.value.length;  
+      const pbText = $('.form-1 .progress-bar_text');  
+  if (len === 0) {  
+        $('.form-1 .progress-bar_item').each(function() {  
+          $(this).removeClass('active')  
+        });  
+        $('.form-1 .active').css('background-color', 'transparent');  
+        changeText(pbText, 'Password is blank');  
+      } else if (len > 0 && len <= 3) {  
+        $('.form-1 .progress-bar_item-1').addClass('active');  
+        $('.form-1 .progress-bar_item-2').removeClass('active');  
+        $('.form-1 .progress-bar_item-3').removeClass('active');  
+        $('.form-1 .active').css('background-color', '#FF4B47');  
+        changeText(pbText, 'Too weak');  
+      } else if (len > 3 && len <= 7) {  
+        $('.form-1 .progress-bar_item-2').addClass('active');  
+        $('.form-1 .progress-bar_item-3').removeClass('active');  
+        $('.form-1 .active').css('background-color', '#F9AE35');  
+        changeText(pbText, 'Could be stronger');  
+      } else {  
+        $('.form-1 .progress-bar_item').each(function() {  
+          $(this).addClass('active');  
+        });  
+        $('.form-1 .active').css('background-color', '#2DAF7D');  
+        changeText(pbText, 'Strong password');  
+      }  
+    });  
+    });  
+    
+  </script>
+  
+</head>
+<body class="bodyback">
+  <nav class="navbar  nobullets bg-sucesslight contacts">
+   <i class="fa-solid fa-envelope"></i><h3 style="margin-right:72%">kerala@gmail.com</h3>
+   <i class="fa-solid fa-phone">0487-1234567</i>
+   <ol><li>
+     <i class="fa-brands fa-whatsapp-square"></i>
+     <i class="fa-brands fa-facebook-square"></i>
+     <i class="fa-brands fa-google-plus-square"></i>
+     <i class="fa-brands fa-youtube"></i>
+   </li></ol>
+ </nav>
+     <nav class="navbar navbar-expand-lg bg-success">
+     <div class="container-fluid">
+      <img src="Images/keralogo.png" style="width:100px;" alt="logo">
+     
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <h2 class="navbar linkheads" >Kerala <br> Tourism</h2>
+          </li>
+          <li class="nav-item">
+            <a   class="nav-link active"  style="color:aliceblue;margin-left:700px; margin-top: 60px;" href="index.html">Experience kerala</a>
+          </li>
+          <!-- <li class="nav-item home sp">
+            <a class="nav-link disabled"  style="color:aliceblue ; margin-top: 60px;" href="places.html">Where to go</a>
+          </li>
+           <li class="nav-item sp">
+            <a class="nav-link disabled"  style="color:azure; margin-top: 60px;" href="#placesvisit">Top destination</a>
+          </li> -->
+          <li class="nav-item sp">
+            <a class="nav-link active "  style="color:azure; margin-top: 60px;" href="login.html">Login</a>
+          </li>
+          <li class="nav-item sp">
+            <a class="nav-link active" style="color:azure; margin-top: 60px;" href="#">sign up?</a>
+            </li>
+        </ul>
+       </div>
+    </div>
+  </nav>
+
+  <div class="container">
+   <div class="row">
+    <div class="col-md-2"></div> 
+    <div class="col-md-2">
+    <br>  <br>  <br>
+      <img src="./Images/welcomelog.jpg" alt="">
+    </div>
+    
+       
+    <div class="col-md-5"></div>
+        
+              <div class="col-md-3" style="text-align:left">
+                
+                <form action="login.html" class="form-1">
+                  <h5>Create Account?</h5>
+                  <div class="input-control">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" placeholder="First name" id="fname" ><br></span>
+                   <div id="fnameer">
+                  </div>
+                  <label for="fname">Last Name</label><br>
+                  <input type="text" placeholder=" Lastnmae" id="lname" >
+                  <div id="lnameer">
+                  </div>
+                  </div>
+                  <div class="input-control">
+                  <label for="email">Email id</label><br>
+                  <input type="text" placeholder="email" id="email"  ><br></span>
+                  <div id="error"></div>
+              </div>
+                  <div class="input-control">
+                  <label for="phone">Phone </label><br>
+                  <input type="phone"  placeholder="phone" id="phone"><br>
+                  <div id="pherror"></div>
+                  </div>
+              
+                  <lable> Enter password   </lable> <br>
+                  <input class="input-1" type="password" id="pwd" style="width:180px;height: 28PX;" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">  <input type="checkbox" onclick="myFunction()"> 
+                  <p style="font-size:smaller;">minimam 9character 1 capital letter,1 small letter,1 number</p><div id="passerror"></div> <br>
+                  <div class="progress-bar_wrap">  
+                  <div class="progress-bar_item progress-bar_item-1"></div>  
+                  <div class="progress-bar_item progress-bar_item-2"></div>  
+                  <div class="progress-bar_item progress-bar_item-3"></div>  
+                   </div>  <br>
+                <span class="progress-bar_text">Password is blank</span>  
+                 <br>
+                 <!-- <input type="checkbox" onclick="myFunction()"> -->
+                  <div class="input-control">
+                  <label for="password">Confirm Password</label><br>
+                  <input type="password"  style="width:180px;height: 28PX;" placeholder="confirm Password" id="repass"><br>
+                  <div id="repasserror"></div>
+                  </div>
+                 <button  id="submit" type="submit">submit</button>
+                 </form>  
+                
+                
+                </div> 
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                 </div>
+                 <div class="col-md-1">
+                </div>
+                   <div class="col-md-3 signuplogin1" >
+                     <a href="login.html">Want to sign?</a>
+                        </div>
+                   </div>
+               
+                </div>
+               <script src="signup.js"></script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>  
+                   
+  </body>
+  </html>

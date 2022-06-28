@@ -1,0 +1,146 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+
+.linkheads{
+    font-style:italic;
+     margin-left :1%;
+    font-family:fantasy;
+    color: orange;
+}
+.navbar a:hover { background-color:gainsboro; color:blue; }
+.loginind{
+    text-decoration: none;
+}
+.bodyback{
+   
+    background-repeat: none;
+    background-size: cover ;
+    background:url(./Images/backgroundplaces.webp);
+}
+
+.contacts{
+    font-family:'Times New Roman', Times, serif;
+    color:black;
+    font-size:small;
+    
+   }
+   .signup{
+       margin-left :250px;
+   }
+  
+ .carousel-inner.carousel-item img{
+     height: 300px;
+
+ }
+.mymargin{
+margin: 20px;
+margin: top 10px;
+    }
+.subborder{
+    border: solid 1px black;
+}
+   .textcenter{
+    text-align:center;
+
+   
+   }
+    .nobullets ol li{
+    list-style:none;
+    color:black;
+    margin-left:1140px;
+   }
+   .card img{
+    height:300px;
+   }
+   footer{
+   
+    color:brown;
+    
+    /* border: solid 1px white ; */
+     margin-left: 300px; 
+    max-width: max-content;
+    
+    
+   }
+   .topdestination a{
+    text-decoration: none;
+    color:black;
+}
+    
+
+   footer ul li{
+   
+    list-style:none;
+    font-size: x-large;
+    color:coral;
+    /* margin-left: 10px; */
+   }
+   
+    
+    
+    .welcome{
+        font-style: italic;
+        text-align: center;
+       color:green;
+       /* background-image: url(./Images/backgroundplaces.webp); */
+       background-size: cover;
+       border-bottom: 2px solid darkcyan;
+    }
+      
+    .welcomedist{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        text-align:left;
+        
+        color:green;
+       /* background-image: url(./Images/backgroundplaces.webp); */
+       background-size: cover;
+       border-bottom: 2px solid darkcyan;
+    }
+
+    .welcome1{
+        font-style:normal;
+        text-align: center;
+       color:darkcyan;
+       /* background-image: url(./Images/backgroundplaces.webp); */
+       background-size: cover;
+      
+    }
+    .distlink a{
+        text-decoration: none;
+        color:black;
+        text-align: center;
+
+    }
+    .distlinkcolor a:hover{
+        color:brown;
+        background-color: aliceblue;
+    }
+    .distlink a:hover{
+        color:black; 
+     /* background-color: blanchedalmond; */
+    }
+    .placelinkdis
+    {
+        text-decoration:none;
+        color:blueviolet;
+    }
+    .partplace{
+    margin-top :20px;
+    text-align: center;
+        
+    }
+    .placeheading
+    {
+      color:darkcyan
+    }
+    
+        .signuplogin a{
+         text-decoration: none;
+            color:black;
+        }
+        .signuplogin1 a{
+            text-decoration: none;
+            color:brown;
+        }
